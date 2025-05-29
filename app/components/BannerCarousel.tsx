@@ -29,12 +29,12 @@ export default function BannerCarousel() {
 
   const nextSlideIndex = (currentSlide + 1) % slides.length;
 
-  const goToSlideAndPlay = (index) => {
-    if (sliderRef.current) {
-      sliderRef.current.slickGoTo(index);
-      sliderRef.current.slickPlay(); // restart autoplay
-    }
-  };
+  // const goToSlideAndPlay = (index) => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickGoTo(index);
+  //     sliderRef.current.slickPlay();
+  //   }
+  // };
 
   const mainSettings = {
     dots: false,
