@@ -81,7 +81,6 @@ const sliderRef = useRef<Slider | null>(null);
             src={slides[nextSlideIndex].videoSrc}
             muted
             playsInline
-            style={{ width: "100px", height: "60px", objectFit: "cover", borderRadius: "8px" }}
           />
           <p className="text-white button-name">
             <small>Next</small><br />
@@ -96,7 +95,7 @@ const sliderRef = useRef<Slider | null>(null);
               key={index}
               onClick={() => sliderRef.current?.slickGoTo(index)}
               className={`px-3 py-1 text-sm rounded-full transition ${
-                index === currentSlide ? "bg-white text-black font-bold" : "bg-gray-500 text-white"
+                index === currentSlide ? "active" : ""
               }`}
             >
               {slide.heading.split(" ")[0]} {/* You can use number or full heading too */}
