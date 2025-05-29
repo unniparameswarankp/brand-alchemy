@@ -1,40 +1,35 @@
 'use client';
 
 import React, { useState, useRef } from "react";
-import Slider from "react-slick";
+// import Slider, { type Slider as SlickSlider } from "react-slick";
 import Link from "next/link";
+import Slider from "react-slick";
+
 
 
 const slides = [
   {
     videoSrc: "/videos/banner1.mp4",
     heading: "We build cool things for the web",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
   },
   {
     videoSrc: "/videos/banner2.mp4",
     heading: "Fast and Modern design in everything",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
   },
   {
     videoSrc: "/videos/banner3.mp4",
     heading: "Responsive Design and fast performance",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
   },
 ];
 
 export default function BannerCarousel() {
- const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+const sliderRef = useRef<Slider | null>(null);
 
   const nextSlideIndex = (currentSlide + 1) % slides.length;
-
-  // const goToSlideAndPlay = (index) => {
-  //   if (sliderRef.current) {
-  //     sliderRef.current.slickGoTo(index);
-  //     sliderRef.current.slickPlay();
-  //   }
-  // };
 
   const mainSettings = {
     dots: false,
@@ -47,11 +42,12 @@ export default function BannerCarousel() {
     arrows: true,
     fade: true,
     pauseOnHover: false,
+    beforeChange: (oldIndex: number, nextIndex: number) => setCurrentSlide(nextIndex), // ✅ Explicit typing
   };
 
   return (
     <div className="ba-banner">
-      {/* Main slider */}
+      {/* Main Slider */}
       <Slider ref={sliderRef} {...mainSettings} className="ba-main-slider">
         {slides.map(({ videoSrc, heading, description }, index) => (
           <div key={index} className="items-ba">
@@ -73,9 +69,10 @@ export default function BannerCarousel() {
           </div>
         ))}
       </Slider>
-      {/* Custom thumbnail and buttons */}
-      <div className="ba-thumbnails">
-        {/* Next slide preview - now clickable */}
+
+      {/* Thumbnails and Buttons */}
+      <div className="ba-thumbnails mt-4">
+        {/* Next Slide Preview (Clickable) */}
         <button
           onClick={() => sliderRef.current?.slickGoTo(nextSlideIndex)}
           className="flex items-center text-left gap-2 mb-2 video-btn"
@@ -84,33 +81,27 @@ export default function BannerCarousel() {
             src={slides[nextSlideIndex].videoSrc}
             muted
             playsInline
-            style={{
-              objectFit: "cover",
-            }}
+            style={{ width: "100px", height: "60px", objectFit: "cover", borderRadius: "8px" }}
           />
-          
-          <p className="text-white button-name"><small>Next</small><br/>{slides[nextSlideIndex].heading}</p>
+          <p className="text-white button-name">
+            <small>Next</small><br />
+            {slides[nextSlideIndex].heading}
+          </p>
         </button>
 
-        {/* Slide buttons (excluding next slide) */}
+        {/* Slide Buttons */}
         <div className="flex gap-2 flex-wrap button-ba">
-          {slides.map((slide, index) => {
-            // if (index === nextSlideIndex) return null;
-            return (
-              <button
-                key={index}
-                onClick={() => sliderRef.current?.slickGoTo(index)}
-                className={`px-3 py-1 text-sm rounded-full transition ${
-                  index === currentSlide
-                    ? "active"
-                    : ""
-                }`}
-              >
-            
-              </button>
-            );
-          })}
-   
+          {slides.map((slide, index) => (
+            <button
+              key={index}
+              onClick={() => sliderRef.current?.slickGoTo(index)}
+              className={`px-3 py-1 text-sm rounded-full transition ${
+                index === currentSlide ? "bg-white text-black font-bold" : "bg-gray-500 text-white"
+              }`}
+            >
+              {slide.heading.split(" ")[0]} {/* You can use number or full heading too */}
+            </button>
+          ))}
         </div>
       </div>
     </div>
