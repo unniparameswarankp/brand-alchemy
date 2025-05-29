@@ -47,7 +47,6 @@ export default function BannerCarousel() {
     arrows: true,
     fade: true,
     pauseOnHover: false,
-    beforeChange: (_, next) => setCurrentSlide(next),
   };
 
   return (
