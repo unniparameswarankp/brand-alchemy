@@ -1,4 +1,202 @@
 @import "tailwindcss";
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift.eot');
+    src: url('/fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift.woff2') format('woff2'),
+        url('/fonts/Bahnschrift.woff') format('woff'),
+        url('/fonts/Bahnschrift.ttf') format('truetype'),
+        url('/fonts/Bahnschrift.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_1.eot');
+    src: url('/fonts/Bahnschrift_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_1.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_1.woff') format('woff'),
+        url('/fonts/Bahnschrift_1.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_1.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_2.eot');
+    src: url('/fonts/Bahnschrift_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_2.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_2.woff') format('woff'),
+        url('/fonts/Bahnschrift_2.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_2.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_3.eot');
+    src: url('/fonts/Bahnschrift_3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_3.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_3.woff') format('woff'),
+        url('/fonts/Bahnschrift_3.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_3.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_4.eot');
+    src: url('/fonts/Bahnschrift_4.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_4.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_4.woff') format('woff'),
+        url('/fonts/Bahnschrift_4.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_4.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_5.eot');
+    src: url('/fonts/Bahnschrift_5.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_5.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_5.woff') format('woff'),
+        url('/fonts/Bahnschrift_5.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_5.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_6.eot');
+    src: url('/fonts/Bahnschrift_6.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_6.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_6.woff') format('woff'),
+        url('/fonts/Bahnschrift_6.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_6.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_7.eot');
+    src: url('/fonts/Bahnschrift_7.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_7.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_7.woff') format('woff'),
+        url('/fonts/Bahnschrift_7.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_7.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_8.eot');
+    src: url('/fonts/Bahnschrift_8.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_8.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_8.woff') format('woff'),
+        url('/fonts/Bahnschrift_8.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_8.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_9.eot');
+    src: url('/fonts/Bahnschrift_9.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_9.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_9.woff') format('woff'),
+        url('/fonts/Bahnschrift_9.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_9.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_10.eot');
+    src: url('/fonts/Bahnschrift_10.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_10.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_10.woff') format('woff'),
+        url('/fonts/Bahnschrift_10.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_10.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_11.eot');
+    src: url('/fonts/Bahnschrift_11.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_11.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_11.woff') format('woff'),
+        url('/fonts/Bahnschrift_11.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_11.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_12.eot');
+    src: url('/fonts/Bahnschrift_12.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_12.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_12.woff') format('woff'),
+        url('/fonts/Bahnschrift_12.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_12.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_13.eot');
+    src: url('/fonts/Bahnschrift_13.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_13.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_13.woff') format('woff'),
+        url('/fonts/Bahnschrift_13.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_13.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift_14.eot');
+    src: url('/fonts/Bahnschrift_14.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Bahnschrift_14.woff2') format('woff2'),
+        url('/fonts/Bahnschrift_14.woff') format('woff'),
+        url('/fonts/Bahnschrift_14.ttf') format('truetype'),
+        url('/fonts/Bahnschrift_14.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 :root {
   --background: #ffffff;
@@ -22,5 +220,206 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bahnschrift', sans-serif;
+  font-size: 1rem;
+}
+.ba-container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ba-wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+.bg-primary{
+  background-color: #245759;
+}
+.bg-light{
+  background-color: #f6f4f1;
+}
+.ba-header{
+  font-size: clamp(1rem, 1.1vw , 2vw);
+  .logo-ba{
+    img{
+      filter: brightness(0)invert(1);
+      width: 12.5vw;
+      height: auto;
+      min-width: 140px;
+    }
+  }
+  ul{
+    gap: 3.5vw;
+  }
+  nav{
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}
+.ba-banner{
+  position: relative;
+  height: 100vh;
+  @media (max-width: 991px) {
+      height: 600px;
+    }
+  font-size: clamp(1rem, 1.2vw , 2vw);
+  .ba-main-slider{
+   position: relative;
+  .items-ba{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    @media (max-width: 991px) {
+      height: 600px;
+    }
+  }
+.slick-active{
+  h1, p, a{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .65;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .ba-container{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 80%;
+    @media (max-width: 767px) {
+     width: 90%;
+     bottom: 150px;
+    }
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 2rem;
+  }
+  h1{
+    margin-bottom: 1vw;
+  }
+  p{
+    margin-bottom: 1vw;
+  }
+  a{
+    margin-top: 5vw;
+  }
+    h1{
+    font-weight: 300;
+    font-size: 5vw;
+    line-height: 1.1;
+    font-size: clamp(3rem, 5vw , 8vw);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+     @media (min-width: 768px) {
+       max-width: 50vw;
+     }
+  }
+  p{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+    width: 60vw;
+    min-width: 900px;
+    display: none;
+  }
+  a{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+  }
+  }
+  .ba-thumbnails{
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw; 
+    z-index: 5;
+    width: 20vw;
+    background-color: #0a0a0a38;
+    padding: .3vw;
+    min-width: 200px;
+    button:hover{
+      cursor: pointer;
+    }
+    video{
+        width: 8vw;
+        height: 5vw;
+        min-width: 70px;
+        min-height: 50px;
+      }
+      .button-name{
+        font-size: clamp(.8rem , 1.2vw , 8vw);
+      }
+  .button-ba{
+    button{
+      background-color: #245759;
+      width: 6vw;
+      position: relative;
+      padding: 0;
+      height: .25vw;
+      border-radius: .2vw;
+      overflow: hidden;
+       min-width: 55px;
+       min-height: 4px;
+      &:after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: 5.7s;
+        background-color: #ffffff;
+        border-radius: .2vw;
+      }
+      &.active{
+        &:after{
+          animation: growWidth 8.7s ease-in-out;
+        }
+      }
+    }
+  }
+}
+}
+@keyframes growWidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.ba-menu-btn{
+  span{
+    height: 1px;
+  }
+}
+.none{
+  display: none!important;
+}
+.arrow-btn{
+  img{
+    height: 1vw;
+    display: block;
+    margin-top: 3px;
+    min-height: 1rem;
+  }
 }
