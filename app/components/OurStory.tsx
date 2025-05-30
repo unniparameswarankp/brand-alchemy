@@ -2,7 +2,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 import Link from 'next/link';
@@ -14,14 +13,6 @@ export default function OurStory() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // const tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: logoRef.current,
-      //     start: 'top 80%',
-      //   },
-      //   defaults: { ease: 'power2.out' },
-      // });
-
       const tl = gsap.timeline({
       scrollTrigger: {
         trigger: logoRef.current,
