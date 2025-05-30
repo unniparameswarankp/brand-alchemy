@@ -4,6 +4,7 @@ import BannerCarousel from './components/BannerCarousel';
 import InteractiveHomeSection from './components/InteractiveHomeSection';
 import CaseStudyList from './components/CaseStudyList';
 import OurStory from './components/OurStory';
+import ServiceList from './components/ServiceList';
 export default function Home() {
   return (
     <div className="ba-wrapper">
@@ -12,6 +13,7 @@ export default function Home() {
     <InteractiveHomeSection />
     <CaseStudyList />
     <OurStory />
+    <ServiceList />
     <Footer />
     </div>
   );

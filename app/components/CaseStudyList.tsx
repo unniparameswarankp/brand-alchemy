@@ -99,7 +99,7 @@ export default function CaseStudyList() {
             </motion.div>
           ))}
         </div>
-        <footer className='pb-4 pt-20 text-center'>
+        <footer className='pb-4 pt-10 text-center'>
           <Link href="#" className="inline-flex items-center gap-3 arrow-btn-border-black">
                 Read More <img src="/arrow_right_white.svg" alt="arrow" />
               </Link>
