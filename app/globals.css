@@ -606,4 +606,8 @@ body {
     background-color: #fff;
   }
 }
-
+.ba-footer{
+  .ba-container{
+    width: 80%;
+  }
+}
