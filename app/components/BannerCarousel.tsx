@@ -60,7 +60,7 @@ const sliderRef = useRef<Slider | null>(null);
               style={{ width: "100%" }}
             />
             <div className="ba-container">
-              <h1>{heading}</h1>
+              <h1 className="cont-light">{heading}</h1>
               <p>{description}</p>
               <Link href="#" className="inline-flex items-center gap-3 arrow-btn">
                 Read More <img src="/arrow_right_white.svg" alt="arrow" />

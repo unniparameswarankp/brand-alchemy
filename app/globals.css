@@ -242,6 +242,12 @@ body {
 .bg-light{
   background-color: #f6f4f1;
 }
+.color-primary{
+  color: #00585a;
+}
+.color-black{
+  color: #000000;
+}
 .ba-header{
   font-size: clamp(1rem, 1.1vw , 2vw);
   .logo-ba{
@@ -380,7 +386,8 @@ body {
       }
   .button-ba{
     button{
-      background-color: #245759;
+      /* background-color: #245759; */
+      background-color: #00585a;
       width: 6vw;
       position: relative;
       padding: 0;
@@ -428,11 +435,54 @@ body {
   display: none!important;
 }
 .arrow-btn{
+  letter-spacing: 1px;
   img{
     height: 1vw;
     display: block;
-    margin-top: 3px;
     min-height: 1rem;
+    transition: .4s;
+  }
+  &:hover{
+    img{
+      transform: translateX(10px);
+    }
+  }
+}
+.arrow-btn-border-black{
+  height: 52px;
+  padding: 0 3rem;
+  border: 1px solid #000000;
+  color: #000000;
+  letter-spacing: 1px;
+  img{
+    height: 1vw;
+    display: block;
+    min-height: 1rem;
+    filter: brightness(0);
+    transition: .4s;
+  }
+  &:hover{
+    img{
+      transform: translateX(10px);
+    }
+  }
+}
+.arrow-btn-border-white{
+  height: 52px;
+  padding: 0 3rem;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 1px;
+  img{
+    height: 1vw;
+    display: block;
+    min-height: 1rem;
+    transition: .4s;
+  }
+  &:hover{
+    img{
+      transform: translateX(10px);
+    }
   }
 }
 .ba-interactive-home{
@@ -463,5 +513,22 @@ body {
     top: 60%;
     left: 35%;
     width: 30%;
+  }
+}
+
+.ba-casestudylist{
+  margin-top: -30vh;
+  position: relative;
+  z-index: 30;
+  h2{
+    font-size: 3.5rem;
+  }
+}
+.ba-our-story{
+  .ba-container{
+    width: 80%;
+  }
+  h2{
+    font-size: 3.5rem;
   }
 }
