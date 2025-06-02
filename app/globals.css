@@ -503,21 +503,29 @@ body {
 }
 .ba-interactive-home{
   h2{
-    font-size: clamp(3rem, 10vw , 8vw);
-    margin-bottom: 2vw;
+    font-size: clamp(4rem, 10vw , 8vw);
+    margin-bottom: 25vw;
     font-weight: 300;
     position: relative;
     z-index: 2;
     margin-left: -5vw;
+    @media (min-width: 575px) {
+      margin-bottom: 2vw;
+    }
   }
    figure{
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 30%;
+    left: 30%;
     transform: rotate(25deg);
     width: 20vw;
     height: auto;
     margin-top: -10vw;
+    min-width: 200px;
+    @media (min-width: 575px) {
+      top: 40%;
+      left: 50%;
+    }
     img{
       width: 100%;
       height: auto;
@@ -526,9 +534,17 @@ body {
   .paragraph{
     font-size: clamp(1rem, 1.1vw , 2vw);
     position: absolute;
-    top: 60%;
-    left: 35%;
-    width: 30%;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    @media (min-width: 575px) {
+      top: 60%;
+      min-width: 400px;
+      left: 50%;
+      width: 30%;
+      min-width: 400px;
+    }
   }
 }
 
@@ -537,7 +553,10 @@ body {
   position: relative;
   z-index: 30;
   h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+     @media (min-width: 575px) {
+      font-size: 3.5rem;
+     }
   }
 }
 .ba-our-story{
@@ -545,12 +564,18 @@ body {
     width: 80%;
   }
   h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+     @media (min-width: 575px) {
+      font-size: 3.5rem;
+     }
   }
 }
 .ba-service-list{
   h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+     @media (min-width: 575px) {
+      font-size: 3.5rem;
+     }
   }
 }
 
@@ -608,6 +633,24 @@ body {
 }
 .ba-footer{
   .ba-container{
+    @media (min-width: 768px) {
     width: 80%;
+    }
   }
+  @media (max-width: 767px) {
+    .grid{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  a{
+    transition: .4s;
+  }
+  a:hover{
+    color: #ffffff;
+  }
+
 }
+  .text-sm{
+    font-size: 1rem;
+  }

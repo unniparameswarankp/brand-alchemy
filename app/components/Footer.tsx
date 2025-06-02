@@ -12,11 +12,11 @@ import { FaLinkedin, FaYoutube, FaInstagram, FaFacebook, FaDribbble, FaBehance, 
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-6 py-16 ba-footer">
+    <footer className="bg-black text-white py-16 ba-footer">
       <div className="ba-container">
 
         {/* Main footer links */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm mb-16">
           <div>
             <h3 className="font-light text-2xl mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400">
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>General Enquiry : +91 480 2733 111</li>
               <li>Sales Enquiry : +91 480 2733 555</li>
-              <li>Email : info@webandcrafts.com</li>
+              <li>Email : info@bandalchemys.com</li>
               <li>HR Enquiry : +91 480 2733 999</li>
               <li>Whatsapp ( Sales ) : +91 8606 483 399</li>
             </ul>
@@ -71,7 +71,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <div className="mb-4 md:mb-0">Brand Alchemy © 2025 All rights reserved</div>
           {/* Social Icons */}
-        <div className="flex justify-center gap-6 text-m text-white">
+        <div className="flex justify-center gap-6 text-m text-white mb-4 md:mb-0">
           <FaLinkedin className="hover:text-gray-400 cursor-pointer" />
           <FaYoutube className="hover:text-gray-400 cursor-pointer" />
           <FaInstagram className="hover:text-gray-400 cursor-pointer" />

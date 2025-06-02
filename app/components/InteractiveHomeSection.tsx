@@ -148,7 +148,7 @@ export default function InteractiveHomeSection() {
     >
       {/* Paragraph section */}
       <p
-        className="text-[clamp(2.5rem,4vw,4rem)] font-light max-w-4xl leading-tight text-center"
+        className="text-[clamp(2.1rem,4vw,4rem)] font-light max-w-4xl leading-tight text-center"
       >
         {paragraphText.split('').map((char, i) => (
           <span
