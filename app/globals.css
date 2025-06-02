@@ -291,6 +291,7 @@ body {
   h1, p, a{
     opacity: 1;
     transform: translateY(0);
+    color: #ffffff;
   }
 }
   video{
