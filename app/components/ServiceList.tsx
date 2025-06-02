@@ -67,6 +67,7 @@ export default function ServiceList() {
             >
               <div>
                 <div className="overflow-hidden">
+                  <figure>
                   <Image
                     src={cs.imageUrl}
                     alt={cs.title}
@@ -74,6 +75,7 @@ export default function ServiceList() {
                     height={400}
                     className="w-full h-50 object-cover hover:scale-105 transition-transform duration-300"
                   />
+                  </figure>
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-light color-primary mb-2">{cs.title}</h3>

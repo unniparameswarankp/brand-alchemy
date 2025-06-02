@@ -558,6 +558,21 @@ body {
       font-size: 3.5rem;
      }
   }
+  figure{
+    height: 0;
+    padding-bottom: 70%;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 .ba-our-story{
   .ba-container{
@@ -577,9 +592,22 @@ body {
       font-size: 3.5rem;
      }
   }
+  figure{
+    height: 0;
+    padding-bottom: 60%;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
-
-
 .ba-logo{
   width: 100%;
   padding-bottom: 100%;
@@ -590,20 +618,29 @@ body {
     position: absolute;
     width: calc(50% - 6px);
     height: calc(50% - 6px);
-    border: 7px solid #ffffff;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);  
-    border-radius: 50%; 
-                                        
+    border-radius: 50%;      
+    background-color: #ffffff;                              
+  }
+  .inner-circle{
+    position: absolute;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
   }
   .circle-cover{
     position: absolute;
-    width: 110%;
-    height: 110%;
+    width: calc(100% + 1rem);
+    height: calc(100% + 1rem);
     background-color: #000000;
-    top: -5%;
-    right: -5%;
+    top: -.5rem;
+    right: -.5rem;
     border-radius: 50%;                              
   }
   .line-left{
@@ -651,6 +688,7 @@ body {
   }
 
 }
-  .text-sm{
+.text-sm{
     font-size: 1rem;
-  }
+}
+

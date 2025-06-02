@@ -14,25 +14,27 @@ export default function OurStory() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: logoRef.current,
-        start: 'top 60%',
-        end: 'top 30%', // adjust for faster or slower animation
-        scrub: true, // ← tie progress to scroll!
-      },
-      defaults: { ease: 'none' },
-    });
+        scrollTrigger: {
+          trigger: logoRef.current,
+          start: 'top top',      // when the section hits top of viewport
+          end: '+=1000',         // amount of scroll needed to complete the animation
+          scrub: true,
+          pin: true,             // pin the section during animation
+          anticipatePin: 1,
+        },
+        defaults: { ease: 'none' },
+      });
 
       tl.fromTo(
         '.line-left-inner',
-          { height: 0 },
-          { height: '100%', duration: 2 },
-          '-=0.5'
-        )
+        { height: 0 },
+        { height: '100%', duration: 2 },
+        '-=0.5'
+      )
         .fromTo(
-        '.circle-cover',
-        { width: '110%' },
-        { width: 0, duration: 3 },
+          '.circle-cover',
+          { width: '110%' },
+          { width: 0, duration: 3 }
         )
         .fromTo(
           '.line-right-inner',
@@ -40,24 +42,28 @@ export default function OurStory() {
           { height: '100%', duration: 2 },
           '-=0.4'
         );
+        
     }, logoRef);
 
     return () => ctx.revert();
   }, []);
 
+
+
   return (
-    <section className="bg-black text-white  py-20 ba-our-story">
+    <section className="bg-black flex align-center text-white h-screen py-20 ba-our-story" ref={logoRef}>
 
 
       <div className="ba-container grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-10">
         
         {/* Left Content */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4 }}
+              className="text-ba"
+            >
           <h2 className="text-5xl md:text-6xl font-light mb-6">Our Story</h2>
           <p className="text-lg leading-relaxed mb-10 font-light">
             In a world brimming with possibilities, we sprouted, seizing our destiny to create an extraordinary
@@ -69,21 +75,10 @@ export default function OurStory() {
         </motion.div>
 
         {/* Right Orb Image */}
-       <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          {/* <video
-            src="/videos/banner1.mp4"
-            autoPlay
-              muted
-              loop
-              playsInline
-          /> */}
-               <div ref={logoRef} className="ba-logo">
+       <div className='image-ba'>
+               <div  className="ba-logo">
                 <div className="circle">
+                  <div className='inner-circle'></div>
                   <div className='circle-cover'></div>
                 </div>
                 <div className="line-left">
@@ -93,7 +88,8 @@ export default function OurStory() {
                   <div className="line-right-inner"></div>
                 </div>
                </div>
-       </motion.div>
+              
+       </div>
 
       </div>
     </section>
