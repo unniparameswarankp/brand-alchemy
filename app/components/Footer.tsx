@@ -72,13 +72,13 @@ export default function Footer() {
           <div className="mb-4 md:mb-0">Brand Alchemy © 2025 All rights reserved</div>
           {/* Social Icons */}
         <div className="flex justify-center gap-6 text-m text-white mb-4 md:mb-0">
-          <FaLinkedin className="hover:text-gray-400 cursor-pointer" />
-          <FaYoutube className="hover:text-gray-400 cursor-pointer" />
-          <FaInstagram className="hover:text-gray-400 cursor-pointer" />
-          <FaFacebook className="hover:text-gray-400 cursor-pointer" />
-          <FaDribbble className="hover:text-gray-400 cursor-pointer" />
-          <FaBehance className="hover:text-gray-400 cursor-pointer" />
-          <FaTimes className="hover:text-gray-400 cursor-pointer" />
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaLinkedin  /></Link>
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaYoutube /></Link>
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaInstagram /></Link>
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaFacebook /></Link>
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaDribbble /></Link>
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaBehance /></Link>
+          <Link className="text-gray-400 cursor-pointer" href="#"><FaTimes /></Link>
         </div>
           <div className="flex gap-4">
             <Link href="#">Privacy Policy</Link>
