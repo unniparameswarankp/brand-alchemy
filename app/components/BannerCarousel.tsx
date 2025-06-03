@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // import Slider, { type Slider as SlickSlider } from "react-slick";
 import Link from "next/link";
 import Slider from "react-slick";
-
+import gsap from 'gsap';
+    
 
 
 const slides = [
@@ -26,8 +27,20 @@ const slides = [
 ];
 
 export default function BannerCarousel() {
+  const sectionRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-const sliderRef = useRef<Slider | null>(null);
+  const sliderRef = useRef<Slider | null>(null);
+  useEffect(() => {
+    gsap.to(sectionRef.current, {
+      y:'25vh',
+      scrollTrigger: {
+        trigger: sectionRef.current, // 🔥 this triggers the animation
+        start: 'bottom bottom',
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+  }, []);
 
   const nextSlideIndex = (currentSlide + 1) % slides.length;
 
@@ -46,7 +59,7 @@ const sliderRef = useRef<Slider | null>(null);
   };
 
   return (
-    <div className="ba-banner">
+    <div className="ba-banner" ref={sectionRef}>
       {/* Main Slider */}
       <Slider ref={sliderRef} {...mainSettings} className="ba-main-slider">
         {slides.map(({ videoSrc, heading, description }, index) => (

@@ -11,6 +11,7 @@ export default function OurStory() {
 
   const logoRef = useRef(null);
 
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({

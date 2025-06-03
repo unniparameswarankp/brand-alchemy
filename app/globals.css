@@ -507,6 +507,7 @@ body {
 }
 .ba-interactive-home{
   background-color: #f6f4f1;
+  margin-top: -10vh;
   h2{
     font-size: clamp(4rem, 10vw , 8vw);
     margin-bottom: 25vw;
@@ -697,3 +698,37 @@ body {
     font-size: 1rem;
 }
 
+.ba-tagline{
+  margin-bottom: -20vh;
+  .image{
+    position: absolute;
+    top: calc(50% - 10vw);
+    left: calc(50% - 10vw);
+    width: 20vw;
+    height: 20vw;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* .image-1{
+    top: calc(50% - 8vw);
+    left: calc(50% - 12vw);
+  }
+  .image-2{
+    top: calc(50% - 12vw);
+    left: calc(50% - 14vw);
+  }
+  .image-3{
+    top: calc(50% - 7vw);
+    left: calc(50% - 6vw);
+  }
+  .image-4{
+    top: calc(50% - 10vw);
+    left: calc(50% - 8vw);
+  }
+  .image-5{
+    top: calc(50% - 10vw);
+    left: calc(50% - 10vw);
+  } */
+}
