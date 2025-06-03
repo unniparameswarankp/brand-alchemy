@@ -3,7 +3,7 @@
 'use client';
 import Link from "next/link";
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
@@ -24,9 +24,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   // const [showHeader, setShowHeader] = useState(true);
   // const [isAtTop, setIsAtTop] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(() => {
+  // useEffect(() => {
     // const handleScroll = () => {
     //   const currentY = window.scrollY;
 
@@ -43,15 +43,15 @@ export default function Header() {
     //   setLastScrollY(currentY);
     // };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [lastScrollY]);
 
   return (
     // <header className={`ba-header w-full fixed top-0 left-0 w-full z-999 transition duration-300  ${
     //     showHeader ? 'translate-y-0' : '-translate-y-full'
     //   } ${isAtTop ? 'bg-transparent py-8 ' : 'bg-black py-5'}`}>
-
+  
          <header className="ba-header w-full absolute py-8 top-0 left-0 w-full z-999 transition duration-300">
       <div className="ba-container flex items-center justify-between">
         <Link href="/" className="logo-ba">
