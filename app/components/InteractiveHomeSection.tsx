@@ -144,11 +144,11 @@ export default function InteractiveHomeSection() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full h-screen bg-gray-900 text-white flex items-center justify-center px-8 overflow-hidden ba-interactive-home"
+      className="relative w-full h-screen bg-light text-white flex items-center justify-center px-8 overflow-hidden ba-interactive-home"
     >
       {/* Paragraph section */}
       <p
-        className="text-[clamp(2.1rem,4vw,4rem)] font-light max-w-4xl leading-tight text-center"
+        className="text-[clamp(2.1rem,4vw,4rem)] font-light color-primary max-w-4xl leading-tight text-center"
       >
         {paragraphText.split('').map((char, i) => (
           <span
@@ -177,12 +177,12 @@ export default function InteractiveHomeSection() {
           />
           </figure>
           <h2
-            className="title text-[clamp(2rem,4vw,3rem)] tracking-tight"
+            className="title text-[clamp(2rem,4vw,3rem)] tracking-tight color-primary"
             style={{ letterSpacing: '-0.2em' }}
           >
             {title}
           </h2>
-          <p className="paragraph text-lg max-w-xl mb-8">{paragraph}<br/><br/><a href="#" className="inline-flex items-center gap-3 arrow-btn">
+          <p className="paragraph color-black text-lg max-w-xl mb-8">{paragraph}<br/><br/><a href="#" className="inline-flex items-center gap-3 arrow-btn-black">
                 Read More <img src="/arrow_right_white.svg" alt="arrow" /></a></p>
           
         </div>
