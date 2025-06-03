@@ -27,21 +27,21 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentY = window.scrollY;
+    // const handleScroll = () => {
+    //   const currentY = window.scrollY;
 
-      // Detect direction
-      if (currentY < lastScrollY) {
-        setShowHeader(true); // Scrolling up
-      } else {
-        setShowHeader(false); // Scrolling down
-      }
+    //   // Detect direction
+    //   if (currentY < lastScrollY) {
+    //     setShowHeader(true); // Scrolling up
+    //   } else {
+    //     setShowHeader(false); // Scrolling down
+    //   }
 
-      // Detect top
-      setIsAtTop(currentY <= 200);
+    //   // Detect top
+    //   setIsAtTop(currentY <= 200);
 
-      setLastScrollY(currentY);
-    };
+    //   setLastScrollY(currentY);
+    // };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
