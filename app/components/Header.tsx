@@ -22,8 +22,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
-  const [isAtTop, setIsAtTop] = useState(true);
+  // const [showHeader, setShowHeader] = useState(true);
+  // const [isAtTop, setIsAtTop] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
