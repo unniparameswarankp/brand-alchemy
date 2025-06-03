@@ -581,6 +581,7 @@ body {
   }
 }
 .ba-our-story{
+  margin-top: -20vh;
   .ba-container{
     width: 80%;
   }
@@ -699,7 +700,6 @@ body {
 }
 
 .ba-tagline{
-  margin-bottom: -20vh;
   .image{
     position: absolute;
     top: calc(50% - 10vw);
@@ -731,4 +731,15 @@ body {
     top: calc(50% - 10vw);
     left: calc(50% - 10vw);
   } */
+}
+.ba-steps{
+  margin-top: -50vh;
+  .ba-container{
+    width: 80%;
+  }
+  img{
+    min-height: 80vh;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }

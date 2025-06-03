@@ -48,9 +48,11 @@ export default function Header() {
   }, [lastScrollY]);
 
   return (
-    <header className={`ba-header w-full fixed top-0 left-0 w-full z-999 transition duration-300  ${
-        showHeader ? 'translate-y-0' : '-translate-y-full'
-      } ${isAtTop ? 'bg-transparent py-8 ' : 'bg-black py-5'}`}>
+    // <header className={`ba-header w-full fixed top-0 left-0 w-full z-999 transition duration-300  ${
+    //     showHeader ? 'translate-y-0' : '-translate-y-full'
+    //   } ${isAtTop ? 'bg-transparent py-8 ' : 'bg-black py-5'}`}>
+
+         <header className="ba-header w-full absolute py-8 top-0 left-0 w-full z-999 transition duration-300">
       <div className="ba-container flex items-center justify-between">
         <Link href="/" className="logo-ba">
         <Image

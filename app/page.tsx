@@ -2,10 +2,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import BannerCarousel from './components/BannerCarousel';
 import InteractiveHomeSection from './components/InteractiveHomeSection';
-import CaseStudyList from './components/CaseStudyList';
+// import CaseStudyList from './components/CaseStudyList';
 import OurStory from './components/OurStory';
-import ServiceList from './components/ServiceList';
+// import ServiceList from './components/ServiceList';
 import AnimatedSection from './components/AnimatedSection';
+import ScrollSteps from './components/ScrollSteps';
 export default function Home() {
   return (
     <div className="ba-wrapper">
@@ -14,8 +15,10 @@ export default function Home() {
     <AnimatedSection />
     <OurStory />
     <InteractiveHomeSection />
-    <CaseStudyList />
-    <ServiceList />
+    <ScrollSteps />
+    {/* <CaseStudyList />
+    <ServiceList /> */}
+    
     <Footer />
     </div>
   );
