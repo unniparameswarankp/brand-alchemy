@@ -266,6 +266,9 @@ body {
       display: none;
     }
   }
+  a{
+    color: #ffffff;
+  }
 }
 .ba-banner{
   position: relative;
