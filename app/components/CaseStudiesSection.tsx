@@ -55,7 +55,7 @@ export default function CaseStudiesScrollSection() {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: `+=${scrollLength * 3 + titleScrollLength}`,
+          end: `+=${scrollLength * 2 + titleScrollLength}`,
           scrub: true,
           pin: true,
           anticipatePin: 1,
@@ -68,7 +68,7 @@ export default function CaseStudiesScrollSection() {
         y: -100,
         duration: .1,
         ease: "none",
-      }, ">-.5");
+      });
 
       // Bring cards into screen from right (x = window width to 0)
       tl.to(horizontal, {
