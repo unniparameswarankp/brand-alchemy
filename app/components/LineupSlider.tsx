@@ -93,8 +93,8 @@ useEffect(() => {
 
   return (
     <section className="py-16 flex align-center bg-light color-black ba-service-slider">
-      <div ref={titleRef} className="ba-container">
-        <h2  className="text-[clamp(2rem,5vw,30rem)] font-light text-center mb-15 color-primary">
+      <div  className="ba-container">
+        <h2 ref={titleRef} className="text-[clamp(2rem,5vw,30rem)] font-light text-center mb-15 color-primary">
           Explore the line-up
         </h2>
 
