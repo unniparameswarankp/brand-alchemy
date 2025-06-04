@@ -73,7 +73,7 @@ const services = [
 
 
 // Group services into chunks of 2 for main slides
-const mainSlides = chunkArray(services, 2);
+// const mainSlides = chunkArray(services, 2);
 
 
 
