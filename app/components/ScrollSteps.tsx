@@ -52,7 +52,7 @@ export default function ScrollSteps() {
   }, []);
 
   return (
-    <section className="relative bg-primary text-white  ba-steps">
+    <section className="relative bg-light text-black  ba-steps">
       <div className="grid md:grid-cols-2 gap-10 relative ba-container">
         {/* Left: Scrollable images */}
         <div className="flex flex-col space-y-30 pt-[150px] pb-[150] mr-[-100]">
@@ -79,9 +79,9 @@ export default function ScrollSteps() {
         }`}
       >
         <div className="flex items-center gap-4">
-          <h3 className="text-4xl font-light text-white mb-4">{step.title}</h3>
+          <h3 className="text-4xl font-light color-primary mb-4">{step.title}</h3>
         </div>
-        <p className="text-sm text-white max-w-sm">{step.text}</p>
+        <p className="text-sm text-black max-w-sm">{step.text}</p>
       </div>
     ))}
   </div>

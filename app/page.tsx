@@ -7,6 +7,7 @@ import OurStory from './components/OurStory';
 // import ServiceList from './components/ServiceList';
 import AnimatedSection from './components/AnimatedSection';
 import ScrollSteps from './components/ScrollSteps';
+import CaseStudiesSection from './components/CaseStudiesSection';
 export default function Home() {
   return (
     <div className="ba-wrapper">
@@ -15,6 +16,7 @@ export default function Home() {
     <AnimatedSection />
     <OurStory />
     <InteractiveHomeSection />
+    <CaseStudiesSection />
     <ScrollSteps />
     {/* <CaseStudyList />
     <ServiceList /> */}

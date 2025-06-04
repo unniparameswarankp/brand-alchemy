@@ -733,7 +733,7 @@ body {
   } */
 }
 .ba-steps{
-  margin-top: -50vh;
+  margin-top: -10vh;
   .ba-container{
     width: 80%;
   }
@@ -742,4 +742,44 @@ body {
     max-height: 500px;
     object-fit: cover;
   }
+}
+.ba-horizondal-cards{
+  position: relative;
+  transform: rotate3d(8deg);
+  h2{
+    z-index: 1;
+  }
+.card{
+  width: 30vw;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  figure, img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 10%;
+    z-index: 3;
+    color: #ffffff;
+    background: linear-gradient(#00000000, #000000);
+    padding-top: 20vh;
+    padding-bottom: 0;
+
+  }
+}
+.ba-link-card{
+  min-width: 30vw;
+}
 }
