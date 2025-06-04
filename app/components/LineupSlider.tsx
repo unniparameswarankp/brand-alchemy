@@ -10,14 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Utility: chunk array into groups of size n
-function chunkArray<T>(arr: T[], size: number): T[][] {
-  const result = [];
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, i + size));
-  }
-  return result;
-}
+
 
 const services = [
   {
@@ -72,8 +65,6 @@ const services = [
 ];
 
 
-// Group services into chunks of 2 for main slides
-// const mainSlides = chunkArray(services, 2);
 
 
 
