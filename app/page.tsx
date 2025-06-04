@@ -8,6 +8,7 @@ import OurStory from './components/OurStory';
 import AnimatedSection from './components/AnimatedSection';
 import ScrollSteps from './components/ScrollSteps';
 import CaseStudiesSection from './components/CaseStudiesSection';
+import LineupSlider from './components/LineupSlider';
 export default function Home() {
   return (
     <div className="ba-wrapper">
@@ -18,9 +19,9 @@ export default function Home() {
     <InteractiveHomeSection />
     <CaseStudiesSection />
     <ScrollSteps />
+    <LineupSlider />
     {/* <CaseStudyList />
     <ServiceList /> */}
-    
     <Footer />
     </div>
   );
