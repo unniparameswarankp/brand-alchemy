@@ -876,7 +876,7 @@ body {
   }
 }
 
-
+body.my-custom-style{
 
 /* full white bg */
 .bg-black{
@@ -914,6 +914,12 @@ body {
 .ba-logo .inner-circle, .ba-logo .circle-cover{
   background-color: #f6f4f1!important;
 }
+
+footer.ba-footer{
+  background-color: #000000!important;
+}
+
+}
 .ba-horizondal-cards::after {
   display: none!important;
 }
@@ -931,7 +937,4 @@ body {
 }
 .ba-steps{
   margin-top: -10vh;
-}
-.ba-footer{
-  background-color: #000000!important;
 }

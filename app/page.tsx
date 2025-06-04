@@ -9,6 +9,7 @@ import AnimatedSection from './components/AnimatedSection';
 import ScrollSteps from './components/ScrollSteps';
 import CaseStudiesSection from './components/CaseStudiesSection';
 import LineupSlider from './components/LineupSlider';
+import FloatingToggleButton from './components/FloatingToggleButton';
 export default function Home() {
   return (
     <div className="ba-wrapper">
@@ -23,6 +24,7 @@ export default function Home() {
     {/* <CaseStudyList />
     <ServiceList /> */}
     <Footer />
+    <FloatingToggleButton />
     </div>
   );
 }
