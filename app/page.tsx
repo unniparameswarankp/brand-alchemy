@@ -10,10 +10,15 @@ import ScrollSteps from './components/ScrollSteps';
 import CaseStudiesSection from './components/CaseStudiesSection';
 import LineupSlider from './components/LineupSlider';
 import FloatingToggleButton from './components/FloatingToggleButton';
+import Cube3D from './components/Cube3D';
+import WigglyTitle from './components/WigglyTitle';
+import WigglyTitle3D from './components/WigglyTitle3D';
 export default function Home() {
   return (
     <div className="ba-wrapper">
     <Header />
+    {/* <WigglyTitle3D /> */}
+    {/* <WigglyTitle /> */}
     <BannerCarousel />
     <AnimatedSection />
     <OurStory />
@@ -21,6 +26,7 @@ export default function Home() {
     <CaseStudiesSection />
     <ScrollSteps />
     <LineupSlider />
+    <Cube3D />
     {/* <CaseStudyList />
     <ServiceList /> */}
     <Footer />

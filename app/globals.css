@@ -938,3 +938,126 @@ footer.ba-footer{
 .ba-steps{
   margin-top: -10vh;
 }
+
+
+.scene {
+  width: 60vw;
+  height: 80vh;
+  perspective: 1000px;
+  margin: 100px auto;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.1s ease-out;
+}
+
+.face {
+  position: absolute;
+  width: 60vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+/* Positioning all 6 sides of the cube */
+.front  { transform: translateZ(150px); }
+.back   { transform: rotateY(180deg) translateZ(150px); }
+.right  { transform: rotateY(90deg) translateZ(150px); }
+.left   { transform: rotateY(-90deg) translateZ(150px); }
+.top    { transform: rotateX(90deg) translateZ(150px); }
+.bottom { transform: rotateX(-90deg) translateZ(150px); }
+.back:after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('/logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .2;
+  transform: rotateY(180deg);
+  filter: brightness(0)invert(1);
+}
+.title-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  overflow: hidden;
+}
+
+.title-text {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.wiggle-letter {
+  display: inline-block;
+  transition: transform 0.15s ease;
+  will-change: transform;
+}
+.wiggly{
+.title-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  perspective: 1000px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.title-box {
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.title-text {
+  font-size: 10vw;
+  font-weight: 300;
+  color: white;
+  display: inline-flex;
+  gap: 10px;
+  pointer-events: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.wiggle-letter {
+  display: inline-block;
+  transition: transform 0.15s ease;
+  will-change: transform;
+}
+
+.subtitle {
+  margin-top: 5vh;
+  font-size: 1.2vw;
+  color: #aaa;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+
+}
